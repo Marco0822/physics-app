@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test1">
         <activity
+            android:name=".bio_exercise"
+            android:exported="true" />
+        <activity
+            android:name=".chem_exercise"
+            android:exported="true" />
+        <activity
+            android:name=".math_exercise"
+            android:exported="true" />
+        <activity
+            android:name=".phy_exercise"
+            android:exported="true" />
+        <activity
+            android:name=".statistics"
+            android:exported="true" />
+        <activity
+            android:name=".exercise"
+            android:exported="true" />
+        <activity
+            android:name=".leaderboard"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
