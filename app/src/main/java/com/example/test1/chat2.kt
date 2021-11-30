@@ -1,13 +1,11 @@
 package com.example.test1
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-
-
-class chat : AppCompatActivity() {
+class chat2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_chat)
+        setContentView(R.layout.chat2)
     }
 }

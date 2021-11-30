@@ -25,6 +25,7 @@ class exercise : AppCompatActivity() {
             val intent = Intent( this, bio_exercise::class.java)
             startActivity(intent)
         }
+
     }
 
 }

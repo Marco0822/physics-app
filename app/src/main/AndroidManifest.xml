@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test1">
         <activity
+            android:name=".load1"
+            android:exported="true" />
+        <activity
+            android:name=".chat2"
+            android:exported="true" />
+        <activity
             android:name=".bio_exercise"
             android:exported="true" />
         <activity
