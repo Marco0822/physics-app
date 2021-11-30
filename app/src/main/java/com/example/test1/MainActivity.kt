@@ -15,19 +15,23 @@ class MainActivity : AppCompatActivity() {
 
 
         findViewById<Button>(R.id.exercise_button).setOnClickListener {
-            val intent = Intent( this, exercise::class.java)
+            val intent = Intent( this,chat::class.java)
+            intent.putExtra("page_id","exercise")
             startActivity(intent)
         }
         findViewById<Button>(R.id.random_button).setOnClickListener {
-            val intent = Intent( this, leaderboard::class.java)
+            val intent = Intent( this, load::class.java)
+            intent.putExtra("page_id","leaderboard")
             startActivity(intent)
         }
         findViewById<Button>(R.id.statistics_button).setOnClickListener {
-            val intent = Intent( this, statistics::class.java)
+            val intent = Intent( this, load::class.java)
+            intent.putExtra("page_id","statistics")
             startActivity(intent)
         }
         findViewById<Button>(R.id.chat_button).setOnClickListener {
-            val intent = Intent( this, chat::class.java)
+            val intent = Intent( this, load::class.java)
+            intent.putExtra("page_id","chat")
             startActivity(intent)
         }
 
