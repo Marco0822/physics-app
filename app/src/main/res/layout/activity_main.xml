@@ -8,22 +8,6 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="250dp"
-        android:layout_height="83dp"
-        android:background="#FF0000"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:text="Daily challenge question"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
-
-    <TextView
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="250dp"
         android:layout_height="83dp"
@@ -38,46 +22,75 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="250dp"
+        android:layout_height="83dp"
+        android:background="#FF0000"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Daily challenge question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/chat_button"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="chat"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
         android:id="@+id/exercise_button"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:text="exercise"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/random_button"
-        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
-        android:textSize="12sp"/>
+        app:layout_constraintVertical_bias="0.563" />
 
     <Button
         android:id="@+id/random_button"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:text="leader board"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
-        android:textSize="12sp"/>
+        app:layout_constraintVertical_bias="0.939" />
 
     <Button
         android:id="@+id/statistics_button"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:text="statistics"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toEndOf="@+id/random_button"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
-        android:textSize="12sp"/>
+        app:layout_constraintVertical_bias="0.939" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -85,33 +98,46 @@
         android:layout_height="94dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.215"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.378"
         app:srcCompat="@drawable/dumbbell" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="105dp"
         android:layout_height="92dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/statistics_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.983"
         app:srcCompat="@drawable/pie_chart" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="118dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        app:srcCompat="@drawable/chat" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="112dp"
         android:layout_height="94dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chat_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68"
+        app:layout_constraintVertical_bias="0.964"
         app:srcCompat="@drawable/trophy" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent( this, statistics::class.java)
             startActivity(intent)
         }
+        findViewById<Button>(R.id.chat_button).setOnClickListener {
+            val intent = Intent( this, chat::class.java)
+            startActivity(intent)
+        }
 
 
 
