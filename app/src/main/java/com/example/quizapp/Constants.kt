@@ -56,7 +56,7 @@ object Constants {
             "39",
             "40",
             "41",
-            "United 42",
+            "42",
             correctAnswer = 2
         )
 
