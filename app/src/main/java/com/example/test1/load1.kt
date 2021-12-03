@@ -18,21 +18,21 @@ class load1 : AppCompatActivity() {
             override fun onTick(millisUntilFinished: Long){}
             override fun onFinish() {
                 if (checker == "exercise") {
-                    val intent = Intent(this, exercise::class.java)
+                    val intent = Intent(this@load1, exercise::class.java)
                     startActivity(intent)
                 }
                 if (checker == "statistics") {
-                    val intent = Intent(this, statistics::class.java)
+                    val intent = Intent(this@load1, statistics::class.java)
                     startActivity(intent)
 
                 }
                 if (checker == "leaderboard") {
-                    val intent = Intent(this, leaderboard::class.java)
+                    val intent = Intent(this@load1, leaderboard::class.java)
                     startActivity(intent)
 
                 }
                 if (checker == "chat2") {
-                    val intent = Intent(this, chat2::class.java)
+                    val intent = Intent(this@load1, chat2::class.java)
                     startActivity(intent)
 
                 }
