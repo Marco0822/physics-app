@@ -68,4 +68,22 @@ object Constants {
         return questionsList
 
     }
+
+    fun getQuestions2(): ArrayList<Question> {
+        val questionsList = ArrayList<Question>()
+        val que1 = Question(
+            1,
+            "What's 13 + 13 + 13 + 13?",
+            R.drawable.penguin1,
+            "50",
+            "51",
+            "52",
+            "53",
+            correctAnswer = 3
+        )
+
+        questionsList.add(que1)
+        return questionsList
+
+    }
 }

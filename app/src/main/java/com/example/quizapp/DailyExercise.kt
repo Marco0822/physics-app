@@ -14,7 +14,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_quiz_question.*
 
-class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
+class DailyExercise : AppCompatActivity(), View.OnClickListener {
 
     private var mCurrentPosition: Int = 1
     private var mQuestionsList: ArrayList<Question>? = null
@@ -30,10 +30,11 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quiz_question)
+        setContentView(R.layout.activity_daily_exercise)
         mUserName = intent.getStringExtra(Constants.USER_NAME)
         Log.i("mUsername", "${mUserName}")
         mGameMode = intent.getStringExtra("game_mode")
+        mGameMode = "practice"
         if (mGameMode == "practice") {
             tv_your_name.visibility = View.INVISIBLE
             tv_opponent_name.visibility = View.INVISIBLE
@@ -44,7 +45,7 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
             tv_progress3.visibility = View.INVISIBLE
         }
 
-        mQuestionsList = Constants.getQuestions()
+        mQuestionsList = Constants.getQuestions2()
         Log.i("Questions Size", "${mQuestionsList!!.size}")
         setQuestion()
 
@@ -141,16 +142,16 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
                         mCurrentPosition <= mQuestionsList!!.size -> {
                             setQuestion()
                         } else ->{
-                            val intent = Intent(this, ResultActivity::class.java)
-                            intent.putExtra(Constants.USER_NAME, mUserName)
-                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
-                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
-                            intent.putExtra(Constants.YOU_WIN, mYouWin)
-                            intent.putExtra("game_mode", mGameMode)
-                            startActivity(intent)
-                            finish()
+                        val intent = Intent(this, ResultActivity::class.java)
+                        intent.putExtra(Constants.USER_NAME, mUserName)
+                        intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
+                        intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                        intent.putExtra(Constants.YOU_WIN, mYouWin)
+                        intent.putExtra("game_mode", mGameMode)
+                        startActivity(intent)
+                        finish()
 
-                        }
+                    }
                     }
 
                 } else {
@@ -378,19 +379,3 @@ class QuizQuestionActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

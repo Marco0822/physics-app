@@ -13,7 +13,8 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val username = intent.getStringExtra(Constants.USER_NAME)
+        var username = intent.getStringExtra(Constants.USER_NAME)
+        username = "Samsung123"
         val game_mode = intent.getStringExtra("game_mode")
         Log.i("Username", "${username}")
         tv_username.text = "Username: $username"

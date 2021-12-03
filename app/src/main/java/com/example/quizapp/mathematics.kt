@@ -12,7 +12,7 @@ class mathematics : AppCompatActivity() {
         setContentView(R.layout.activity_mathematics)
 
         math_ch1_button.setOnClickListener{
-            val intent = Intent( this,GameMode::class.java)
+            val intent = Intent( this,DifficultySelection::class.java)
             startActivity(intent)
         }
     }

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".load2"></activity>
+        <activity android:name=".DailyExercise"></activity>
+        <activity android:name=".DifficultySelection" />
+        <activity android:name=".load2" />
         <activity android:name=".GameMode" />
         <activity android:name=".mathematics" />
         <activity android:name=".chat2" />
@@ -18,13 +20,7 @@
         <activity android:name=".exercise" />
         <activity
             android:name=".HomeActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".load1"
             android:label="@string/title_activity_load1"
@@ -41,7 +37,13 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

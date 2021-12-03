@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_exercise.*
 
 class exercise : AppCompatActivity() {
@@ -13,6 +14,15 @@ class exercise : AppCompatActivity() {
         math_button.setOnClickListener {
             val intent = Intent( this, mathematics::class.java)
             startActivity(intent)
+        }
+        phy_button.setOnClickListener {
+            Toast.makeText(this, "Work in progress ...", Toast.LENGTH_SHORT).show()
+        }
+        chem_button.setOnClickListener{
+            Toast.makeText(this, "Work in progress ...", Toast.LENGTH_SHORT).show()
+        }
+        bio_button.setOnClickListener{
+            Toast.makeText(this, "Work in progress ...", Toast.LENGTH_SHORT).show()
         }
     }
 

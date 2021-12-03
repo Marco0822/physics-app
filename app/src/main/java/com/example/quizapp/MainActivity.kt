@@ -18,8 +18,12 @@ class MainActivity : AppCompatActivity() {
         btn_start.setOnClickListener {
             if(et_name.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter your name!", Toast.LENGTH_SHORT).show()
+            } else if (et_password.text.toString().isEmpty()){
+                Toast.makeText(this, "Please enter the password!", Toast.LENGTH_SHORT).show()
+            } else if ((et_password.text.toString() != "SSC123") or (et_name.text.toString() != "Samsung123")){
+                Toast.makeText(this, "Wrong username or password!", Toast.LENGTH_SHORT).show()
             } else {
-                val intent = Intent(this, QuizQuestionActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java)
                 intent.putExtra(Constants.USER_NAME, et_name.text.toString())
                 startActivity(intent)
                 finish() // close current activity
