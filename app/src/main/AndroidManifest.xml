@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".load2"></activity>
+        <activity android:name=".GameMode" />
+        <activity android:name=".mathematics" />
+        <activity android:name=".chat2" />
+        <activity android:name=".leaderboard" />
+        <activity android:name=".statistics" />
+        <activity android:name=".exercise" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".load1"
+            android:label="@string/title_activity_load1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name=".QuizQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>
