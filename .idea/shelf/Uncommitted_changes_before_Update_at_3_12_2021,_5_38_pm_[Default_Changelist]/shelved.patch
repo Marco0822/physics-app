@@ -1,0 +1,328 @@
+Index: app/src/main/res/layout/activity_chat2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:orientation=\"vertical\">\n\n    <androidx.appcompat.widget.Toolbar\n        android:id= \"@+id/toolbar\"\n        android:background=\"#673AB7\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:paddingBottom=\"10dp\"\n        android:paddingTop=\"10dp\"\n        app:titleMarginStart=\"30dp\"\n        app:titleTextColor=\"@android:color/white\"\n        app:subtitleTextColor=\"@android:color/white\"\n        >\n    </androidx.appcompat.widget.Toolbar>\n\n    <RelativeLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        >\n        <TextView\n            android:text=\"3 December 2021\"\n            android:layout_centerHorizontal=\"true\"\n            android:layout_marginTop=\"30dp\"\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            />\n\n        <TextView\n            android:layout_width=\"190dp\"\n            android:layout_height=\"64dp\"\n            android:layout_marginLeft=\"28dp\"\n            android:layout_marginTop=\"100dp\"\n            android:background=\"#673AB7\"\n            android:paddingLeft=\"6dp\"\n            android:paddingTop=\"10dp\"\n            android:text=\"Question 3 is rather hard! Do you know how to solve it?\"\n            android:textColor=\"@android:color/white\" />\n\n\n    </RelativeLayout>\n\n\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_chat2.xml b/app/src/main/res/layout/activity_chat2.xml
+--- a/app/src/main/res/layout/activity_chat2.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/app/src/main/res/layout/activity_chat2.xml	(date 1638523932987)
+@@ -13,6 +13,7 @@
+         android:paddingBottom="10dp"
+         android:paddingTop="10dp"
+         app:titleMarginStart="30dp"
++        app:title="Class 3A"
+         app:titleTextColor="@android:color/white"
+         app:subtitleTextColor="@android:color/white"
+         >
+@@ -42,7 +43,33 @@
+             android:textColor="@android:color/white" />
+ 
+ 
++        <com.google.android.material.textfield.TextInputLayout
++            android:layout_width="320dp"
++            android:layout_height="match_parent"
++            android:layout_marginTop="600dp"
++
++            >
++
++            <com.google.android.material.textfield.TextInputEditText
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_marginBottom="30dp"
++                android:hint="Type here!" />
++        </com.google.android.material.textfield.TextInputLayout>
++
++        <Button
++            android:layout_marginTop="600dp"
++            android:background="@drawable/buttonhollow"
++            android:layout_marginLeft="320dp"
++            android:id="@+id/send"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="Send" />
++
++
+     </RelativeLayout>
+ 
+ 
++
++
+ </LinearLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:background=\"#FFFFFF\"\n    android:orientation=\"vertical\"\n    android:gravity=\"center\"\n    tools:context=\".MainActivity\">\n    <TextView\n        android:id=\"@+id/editTextTextPersonName\"\n        android:layout_width=\"250dp\"\n        android:layout_height=\"40dp\"\n        android:background=\"#FF0000\"\n        android:ems=\"10\"\n        android:gravity=\"center\"\n        android:inputType=\"textPersonName\"\n        android:text=\"Daily challenge question\"\n        />\n    <TextView\n        android:id=\"@+id/editTextTextPersonName2\"\n        android:layout_width=\"250dp\"\n        android:layout_height=\"40dp\"\n        android:background=\"#FF0000\"\n        android:ems=\"10\"\n        android:gravity=\"center\"\n        android:inputType=\"textPersonName\"\n        android:text=\"only 13% students got it right!\"\n        android:textSize=\"12sp\"/>\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"horizontal\"\n        android:gravity=\"center\">\n        <ImageView\n            android:id=\"@+id/imageView7\"\n            android:layout_width=\"96dp\"\n            android:layout_height=\"94dp\"\n            app:srcCompat=\"@drawable/dumbbell\" />\n\n        <ImageView\n            android:id=\"@+id/imageView8\"\n            android:layout_width=\"105dp\"\n            android:layout_height=\"92dp\"\n            app:srcCompat=\"@drawable/pie_chart\" />\n    </LinearLayout>\n\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"horizontal\"\n        android:gravity=\"center\">\n        <Button\n            android:id=\"@+id/exercise_button\"\n            android:layout_width=\"120dp\"\n            android:layout_height=\"120dp\"\n            android:text=\"exercise\"\n            android:textSize=\"12sp\" />\n        <Button\n            android:id=\"@+id/random_button\"\n            android:layout_width=\"120dp\"\n            android:layout_height=\"120dp\"\n            android:text=\"leader board\"\n            android:textSize=\"12sp\" />\n\n\n    </LinearLayout>\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"horizontal\"\n        android:gravity=\"center\">\n        <ImageView\n            android:id=\"@+id/imageView11\"\n            android:layout_width=\"118dp\"\n            android:layout_height=\"100dp\"\n            app:srcCompat=\"@drawable/chat\" />\n\n        <ImageView\n            android:id=\"@+id/imageView9\"\n            android:layout_width=\"112dp\"\n            android:layout_height=\"94dp\"\n            app:srcCompat=\"@drawable/trophy\" />\n    </LinearLayout>\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:orientation=\"horizontal\"\n        android:gravity=\"center\">\n        <Button\n            android:id=\"@+id/chat_button\"\n            android:layout_width=\"120dp\"\n            android:layout_height=\"120dp\"\n            android:text=\"chat\"\n            android:textSize=\"12sp\" />\n\n\n        <Button\n            android:id=\"@+id/statistics_button\"\n            android:layout_width=\"120dp\"\n            android:layout_height=\"120dp\"\n            android:text=\"statistics\"\n            android:textSize=\"12sp\" />\n    </LinearLayout>\n\n\n\n\n\n\n\n\n\n\n\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_home.xml b/app/src/main/res/layout/activity_home.xml
+--- a/app/src/main/res/layout/activity_home.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/app/src/main/res/layout/activity_home.xml	(date 1638523980778)
+@@ -12,19 +12,21 @@
+         android:id="@+id/editTextTextPersonName"
+         android:layout_width="250dp"
+         android:layout_height="40dp"
+-        android:background="#FF0000"
++        android:background="#9A2525"
+         android:ems="10"
+         android:gravity="center"
+         android:inputType="textPersonName"
++        android:textColor="#ffffff"
+         android:text="Daily challenge question"
+         />
+     <TextView
+         android:id="@+id/editTextTextPersonName2"
+         android:layout_width="250dp"
+         android:layout_height="40dp"
+-        android:background="#FF0000"
++        android:background="#9A2525"
+         android:ems="10"
+         android:gravity="center"
++        android:textColor="#ffffff"
+         android:inputType="textPersonName"
+         android:text="only 13% students got it right!"
+         android:textSize="12sp"/>
+@@ -36,6 +38,7 @@
+         android:gravity="center">
+         <ImageView
+             android:id="@+id/imageView7"
++            android:paddingRight="18dp"
+             android:layout_width="96dp"
+             android:layout_height="94dp"
+             app:srcCompat="@drawable/dumbbell" />
+@@ -43,6 +46,7 @@
+         <ImageView
+             android:id="@+id/imageView8"
+             android:layout_width="105dp"
++            android:paddingLeft="25dp"
+             android:layout_height="92dp"
+             app:srcCompat="@drawable/pie_chart" />
+     </LinearLayout>
+@@ -52,18 +56,38 @@
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center">
++
+         <Button
++
+             android:id="@+id/exercise_button"
+             android:layout_width="120dp"
+-            android:layout_height="120dp"
+-            android:text="exercise"
+-            android:textSize="12sp" />
++            android:layout_height="50dp"
++            android:layout_marginTop="10dp"
++            android:layout_marginBottom="23dp"
++            android:background="@drawable/buttonhollow"
++            android:fontFamily="sans-serif"
++            android:text="Exercise"
++            android:textAllCaps="false"
++            android:textColor="@color/colorPrimaryDark"
++            android:textSize="19sp"
++
++            />
++
+         <Button
++
+             android:id="@+id/random_button"
+             android:layout_width="120dp"
+-            android:layout_height="120dp"
+-            android:text="leader board"
+-            android:textSize="12sp" />
++            android:layout_height="50dp"
++            android:layout_marginTop="10dp"
++            android:layout_marginBottom="23dp"
++            android:background="@drawable/buttonhollow"
++            android:fontFamily="sans-serif"
++            android:text="Statistics"
++            android:textAllCaps="false"
++            android:textColor="@color/colorPrimaryDark"
++            android:textSize="19sp"
++
++           />
+ 
+ 
+     </LinearLayout>
+@@ -90,19 +114,37 @@
+         android:orientation="horizontal"
+         android:gravity="center">
+         <Button
++
+             android:id="@+id/chat_button"
+             android:layout_width="120dp"
+-            android:layout_height="120dp"
+-            android:text="chat"
+-            android:textSize="12sp" />
++            android:layout_height="50dp"
++            android:layout_marginTop="10dp"
++            android:layout_marginBottom="23dp"
++            android:background="@drawable/buttonhollow"
++            android:fontFamily="sans-serif"
++            android:text="Chat"
++            android:textAllCaps="false"
++            android:textColor="@color/colorPrimaryDark"
++            android:textSize="19sp"
++
++        />
+ 
+ 
+         <Button
++
+             android:id="@+id/statistics_button"
+             android:layout_width="120dp"
+-            android:layout_height="120dp"
+-            android:text="statistics"
+-            android:textSize="12sp" />
++            android:layout_height="50dp"
++            android:layout_marginTop="10dp"
++            android:layout_marginBottom="23dp"
++            android:background="@drawable/buttonhollow"
++            android:fontFamily="sans-serif"
++            android:text="Leaderboard"
++            android:textAllCaps="false"
++            android:textColor="@color/colorPrimaryDark"
++            android:textSize="19sp"
++
++           />
+     </LinearLayout>
+ 
+ 
+Index: app/src/main/java/com/example/quizapp/chat2.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.quizapp\n\nimport androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\n\nclass chat2 : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_chat2)\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/quizapp/chat2.kt b/app/src/main/java/com/example/quizapp/chat2.kt
+--- a/app/src/main/java/com/example/quizapp/chat2.kt	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/app/src/main/java/com/example/quizapp/chat2.kt	(date 1638523900248)
+@@ -2,10 +2,22 @@
+ 
+ import androidx.appcompat.app.AppCompatActivity
+ import android.os.Bundle
++import android.widget.Button
++import android.widget.Toast
+ 
+ class chat2 : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_chat2)
++
++        // get reference to button
++        val btn_click_me = findViewById(R.id.send) as Button
++        // set on-click listener
++        btn_click_me.setOnClickListener {
++            // your code to perform when the user clicks on the button
++            Toast.makeText(this ,"In development!", Toast.LENGTH_SHORT).show()
+     }
+-}
+\ No newline at end of file
++
++
++}
++    }
+\ No newline at end of file
+Index: .idea/runConfigurations.xml
+===================================================================
+diff --git a/.idea/runConfigurations.xml b/.idea/runConfigurations.xml
+deleted file mode 100644
+--- a/.idea/runConfigurations.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ /dev/null	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RunConfigurationProducerService">
+-    <option name="ignoredProducers">
+-      <set>
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
+-        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
+-      </set>
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_result.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    tools:context=\".ResultActivity\"\n    android:fillViewport=\"true\">\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\"\n        android:orientation=\"vertical\"\n        android:gravity=\"center\">\n        <TextView\n            android:id=\"@+id/tv_username\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Username: \"\n            android:gravity=\"center\"/>\n        <TextView\n            android:id=\"@+id/tv_score\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Score: \"\n            android:gravity=\"center\"/>\n        <TextView\n            android:id=\"@+id/tv_you_win\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Winner: \"\n            android:gravity=\"center\"/>\n\n        <Button\n            android:id=\"@+id/btn_back\"\n            android:layout_width=\"match_parent\"\n            android:layout_height=\"wrap_content\"\n            android:layout_margin=\"10dp\"\n            android:background=\"@color/colorPrimary\"\n            android:text=\"Back\"\n            android:textColor=\"@android:color/white\"\n            android:textSize=\"15sp\"\n            android:textStyle=\"bold\"/>\n\n\n    </LinearLayout>\n</ScrollView>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_result.xml b/app/src/main/res/layout/activity_result.xml
+--- a/app/src/main/res/layout/activity_result.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/app/src/main/res/layout/activity_result.xml	(date 1638520599083)
+@@ -27,6 +27,7 @@
+             android:id="@+id/tv_you_win"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
++
+             android:text="Winner: "
+             android:gravity="center"/>
+ 
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"PLATFORM\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"1.8\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n          </set>\n        </option>\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/.idea/gradle.xml	(date 1638524223522)
+@@ -4,7 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="1.8" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\n  </component>\n  <component name=\"ProjectType\">\n    <option name=\"id\" value=\"Android\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 9841b00869ba8c531770ade1b2c4e683e24190cb)
++++ b/.idea/misc.xml	(date 1638524015962)
+@@ -1,6 +1,31 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="DesignSurface">
++    <option name="filePathToZoomLevelMap">
++      <map>
++        <entry key="app/src/main/res/drawable/button_background.xml" value="0.18072916666666666" />
++        <entry key="app/src/main/res/drawable/buttonhollow.xml" value="0.18072916666666666" />
++        <entry key="app/src/main/res/layout/activity_bio_exercise.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_chat2.xml" value="0.2626970227670753" />
++        <entry key="app/src/main/res/layout/activity_chem_exercise.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_exercise.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_game_mode.xml" value="0.16458333333333333" />
++        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3225806451612903" />
++        <entry key="app/src/main/res/layout/activity_leaderboard.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_load1.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_load2.xml" value="0.16458333333333333" />
++        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4493697830084785" />
++        <entry key="app/src/main/res/layout/activity_math_exercise.xml" value="0.2572463768115942" />
++        <entry key="app/src/main/res/layout/activity_mathematics.xml" value="0.16458333333333333" />
++        <entry key="app/src/main/res/layout/activity_quiz_question.xml" value="0.16458333333333333" />
++        <entry key="app/src/main/res/layout/activity_result.xml" value="0.45" />
++        <entry key="app/src/main/res/layout/chat2.xml" value="0.5" />
++        <entry key="app/src/main/res/layout/content_load1.xml" value="0.16458333333333333" />
++        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.31203703703703706" />
++      </map>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">

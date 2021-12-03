@@ -12,19 +12,21 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:background="#FF0000"
+        android:background="#9A2525"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
+        android:textColor="#ffffff"
         android:text="Daily challenge question"
         />
     <TextView
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:background="#FF0000"
+        android:background="#9A2525"
         android:ems="10"
         android:gravity="center"
+        android:textColor="#ffffff"
         android:inputType="textPersonName"
         android:text="only 13% students got it right!"
         android:textSize="12sp"/>
@@ -36,6 +38,7 @@
         android:gravity="center">
         <ImageView
             android:id="@+id/imageView7"
+            android:paddingRight="18dp"
             android:layout_width="96dp"
             android:layout_height="94dp"
             app:srcCompat="@drawable/dumbbell" />
@@ -43,6 +46,7 @@
         <ImageView
             android:id="@+id/imageView8"
             android:layout_width="105dp"
+            android:paddingLeft="25dp"
             android:layout_height="92dp"
             app:srcCompat="@drawable/pie_chart" />
     </LinearLayout>
@@ -52,18 +56,38 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
+
         <Button
+
             android:id="@+id/exercise_button"
             android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:text="exercise"
-            android:textSize="12sp" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/buttonhollow"
+            android:fontFamily="sans-serif"
+            android:text="Exercise"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+
+            />
+
         <Button
+
             android:id="@+id/random_button"
             android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:text="leader board"
-            android:textSize="12sp" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/buttonhollow"
+            android:fontFamily="sans-serif"
+            android:text="Statistics"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+
+           />
 
 
     </LinearLayout>
@@ -90,19 +114,37 @@
         android:orientation="horizontal"
         android:gravity="center">
         <Button
+
             android:id="@+id/chat_button"
             android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:text="chat"
-            android:textSize="12sp" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/buttonhollow"
+            android:fontFamily="sans-serif"
+            android:text="Chat"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+
+        />
 
 
         <Button
+
             android:id="@+id/statistics_button"
             android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:text="statistics"
-            android:textSize="12sp" />
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/buttonhollow"
+            android:fontFamily="sans-serif"
+            android:text="Leaderboard"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+
+           />
     </LinearLayout>
 
 
